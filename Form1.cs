@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using System.Reflection;
+using System.IO;
 
 namespace Ident_Archiver
 {
@@ -78,11 +79,13 @@ namespace Ident_Archiver
 
             Controls.Add(MainMenuStrip);
 
+            LangTextBox.AutoCompleteCustomSource = new AutoCompleteStringCollection();
+            LangTextBox.AutoCompleteCustomSource.AddRange(GetCategoryEntries("language"));
             LangTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
             DateTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
 
             OrganizationTextBox.AutoCompleteCustomSource = new AutoCompleteStringCollection();
-            OrganizationTextBox.AutoCompleteCustomSource.AddRange(OrganizationDropdown);
+            OrganizationTextBox.AutoCompleteCustomSource.AddRange(GetCategoryEntries("org"));
             OrganizationTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
             WatermarkTextBox.AutoCompleteCustomSource = OrganizationTextBox.AutoCompleteCustomSource;
             WatermarkTextBox.AutoCompleteCustomSource.Add("None");
@@ -90,20 +93,20 @@ namespace Ident_Archiver
             WatermarkTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
         }
 
-        private static string[] OrganizationDropdown =
-        [
-            "SRF",
-            "RTS",
-            "RSI",
-            "RTR",
-            "Disney Channel",
-            "Schweizerische Eidgenossenschaft",
-            "Source",
-            "ABC",
-            "BBC",
-            "ZDF",
-            "ARD",
-        ];
+        private static string[] GetCategoryEntries(string category)
+        {
+            string categoryPath = Path.Combine(Properties.Settings.Default.repolocation, "categories", category);
+            if (!Directory.Exists(categoryPath))
+            {
+                return [];
+            }
+
+            return Directory.GetFiles(categoryPath, "*.md")
+                .Select(Path.GetFileNameWithoutExtension)
+                .Where(name => !string.IsNullOrWhiteSpace(name))
+                .OrderBy(name => name)
+                .ToArray()!;
+        }
         private static void CheckForFfmpeg()
         {
             Process p = new()
