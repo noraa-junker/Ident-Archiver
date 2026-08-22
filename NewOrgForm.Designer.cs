@@ -41,28 +41,28 @@
             // 
             // FullNameTextBox
             // 
-            FullNameTextBox.Location = new Point(156, 59);
+            FullNameTextBox.Location = new Point(139, 59);
             FullNameTextBox.Margin = new Padding(4);
             FullNameTextBox.Name = "FullNameTextBox";
             FullNameTextBox.PlaceholderText = "German";
-            FullNameTextBox.Size = new Size(586, 27);
+            FullNameTextBox.Size = new Size(521, 27);
             FullNameTextBox.TabIndex = 2;
             // 
             // SmallNameTextBox
             // 
-            SmallNameTextBox.Location = new Point(156, 23);
+            SmallNameTextBox.Location = new Point(139, 23);
             SmallNameTextBox.Margin = new Padding(4);
             SmallNameTextBox.Name = "SmallNameTextBox";
             SmallNameTextBox.PlaceholderText = "de";
-            SmallNameTextBox.Size = new Size(586, 27);
+            SmallNameTextBox.Size = new Size(521, 27);
             SmallNameTextBox.TabIndex = 1;
             // 
             // button1
             // 
-            button1.Location = new Point(643, 129);
+            button1.Location = new Point(572, 129);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
-            button1.Size = new Size(96, 29);
+            button1.Size = new Size(85, 64);
             button1.TabIndex = 3;
             button1.Text = "Add";
             button1.UseVisualStyleBackColor = true;
@@ -71,29 +71,29 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(13, 63);
+            label2.Location = new Point(12, 63);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(79, 20);
+            label2.Size = new Size(76, 20);
             label2.TabIndex = 6;
             label2.Text = "Full name:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(13, 26);
+            label1.Location = new Point(12, 26);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(91, 20);
+            label1.Size = new Size(90, 20);
             label1.TabIndex = 5;
             label1.Text = "Small name:";
             // 
             // button2
             // 
-            button2.Location = new Point(539, 129);
+            button2.Location = new Point(479, 129);
             button2.Margin = new Padding(4);
             button2.Name = "button2";
-            button2.Size = new Size(96, 29);
+            button2.Size = new Size(85, 64);
             button2.TabIndex = 4;
             button2.Text = "Cancel";
             button2.UseVisualStyleBackColor = true;
@@ -101,38 +101,38 @@
             // 
             // SubOrgsTextBox
             // 
-            SubOrgsTextBox.Location = new Point(156, 94);
+            SubOrgsTextBox.Location = new Point(139, 94);
             SubOrgsTextBox.Margin = new Padding(4);
             SubOrgsTextBox.Name = "SubOrgsTextBox";
             SubOrgsTextBox.PlaceholderText = "SRF,RTS";
-            SubOrgsTextBox.Size = new Size(586, 27);
+            SubOrgsTextBox.Size = new Size(521, 27);
             SubOrgsTextBox.TabIndex = 7;
-            //
+            // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(13, 97);
+            label3.Location = new Point(12, 97);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(69, 20);
+            label3.Size = new Size(66, 20);
             label3.TabIndex = 8;
             label3.Text = "Suborgs:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(13, 129);
+            label4.Location = new Point(12, 129);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(297, 20);
+            label4.Size = new Size(291, 20);
             label4.TabIndex = 9;
             label4.Text = "Suborgs is optional (Delimited by comma)";
             // 
             // NewOrgForm
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(752, 169);
+            ClientSize = new Size(668, 206);
             Controls.Add(label4);
             Controls.Add(SubOrgsTextBox);
             Controls.Add(label3);

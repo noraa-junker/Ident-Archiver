@@ -38,28 +38,28 @@
             // 
             // FullNameTextBox
             // 
-            FullNameTextBox.Location = new Point(156, 59);
+            FullNameTextBox.Location = new Point(139, 59);
             FullNameTextBox.Margin = new Padding(4);
             FullNameTextBox.Name = "FullNameTextBox";
             FullNameTextBox.PlaceholderText = "German";
-            FullNameTextBox.Size = new Size(586, 27);
+            FullNameTextBox.Size = new Size(521, 27);
             FullNameTextBox.TabIndex = 2;
             // 
             // SmallNameTextBox
             // 
-            SmallNameTextBox.Location = new Point(156, 23);
+            SmallNameTextBox.Location = new Point(139, 23);
             SmallNameTextBox.Margin = new Padding(4);
             SmallNameTextBox.Name = "SmallNameTextBox";
             SmallNameTextBox.PlaceholderText = "de";
-            SmallNameTextBox.Size = new Size(586, 27);
+            SmallNameTextBox.Size = new Size(521, 27);
             SmallNameTextBox.TabIndex = 1;
             // 
             // button1
             // 
-            button1.Location = new Point(643, 94);
+            button1.Location = new Point(572, 94);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
-            button1.Size = new Size(96, 29);
+            button1.Size = new Size(85, 46);
             button1.TabIndex = 3;
             button1.Text = "Add";
             button1.UseVisualStyleBackColor = true;
@@ -68,29 +68,29 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(13, 63);
+            label2.Location = new Point(12, 63);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(79, 20);
+            label2.Size = new Size(76, 20);
             label2.TabIndex = 6;
             label2.Text = "Full name:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(13, 26);
+            label1.Location = new Point(12, 26);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(91, 20);
+            label1.Size = new Size(90, 20);
             label1.TabIndex = 5;
             label1.Text = "Small name:";
             // 
             // button2
             // 
-            button2.Location = new Point(539, 94);
+            button2.Location = new Point(479, 94);
             button2.Margin = new Padding(4);
             button2.Name = "button2";
-            button2.Size = new Size(96, 29);
+            button2.Size = new Size(85, 46);
             button2.TabIndex = 4;
             button2.Text = "Cancel";
             button2.UseVisualStyleBackColor = true;
@@ -98,9 +98,9 @@
             // 
             // NewLanguageForm
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(752, 128);
+            ClientSize = new Size(668, 145);
             Controls.Add(button2);
             Controls.Add(FullNameTextBox);
             Controls.Add(SmallNameTextBox);

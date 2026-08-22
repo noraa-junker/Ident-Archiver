@@ -57,6 +57,7 @@ namespace Ident_Archiver
                 [
                     new ToolStripMenuItem("Settings", null, static (_, _) => new Settings().ShowDialog()),
                     new ToolStripMenuItem("Start screen", null, static (_, _) => new WelcomeForm().ShowDialog()),
+                    new ToolStripMenuItem("Edit entry metadata", null, static (_, _) => new EditEntryForm().ShowDialog()),
                 ]));
             MainMenuStrip.Items.Add(new ToolStripMenuItem("Categories", null, 
                 [

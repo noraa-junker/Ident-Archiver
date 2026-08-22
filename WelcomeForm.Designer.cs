@@ -36,9 +36,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(714, 419);
+            button1.Location = new Point(816, 510);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(86, 43);
             button1.TabIndex = 0;
             button1.Text = "Ok";
             button1.UseVisualStyleBackColor = true;
@@ -48,9 +49,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Variable Small", 20F, FontStyle.Bold);
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(14, 11);
             label1.Name = "label1";
-            label1.Size = new Size(413, 36);
+            label1.Size = new Size(521, 46);
             label1.TabIndex = 1;
             label1.Text = "Welcome to the Ident Archiver";
             // 
@@ -58,21 +59,22 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Variable Small", 12F);
-            label2.Location = new Point(12, 45);
+            label2.Location = new Point(14, 56);
             label2.Name = "label2";
-            label2.Size = new Size(448, 168);
+            label2.Size = new Size(565, 216);
             label2.TabIndex = 2;
             label2.Text = resources.GetString("label2.Text");
             // 
             // WelcomeForm
             // 
             AcceptButton = button1;
-            AutoScaleDimensions = new SizeF(7F, 16F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 562);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "WelcomeForm";
