@@ -65,94 +65,99 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(14, 71);
+            label1.Location = new Point(16, 89);
             label1.Name = "label1";
-            label1.Size = new Size(22, 16);
+            label1.Size = new Size(28, 20);
             label1.TabIndex = 0;
             label1.Text = "Url";
             // 
             // UrlTextBox
             // 
-            UrlTextBox.Location = new Point(92, 68);
+            UrlTextBox.Location = new Point(105, 85);
+            UrlTextBox.Margin = new Padding(3, 4, 3, 4);
             UrlTextBox.Name = "UrlTextBox";
-            UrlTextBox.Size = new Size(479, 23);
+            UrlTextBox.Size = new Size(547, 27);
             UrlTextBox.TabIndex = 1;
             UrlTextBox.Text = "https://";
             // 
             // FromTextBox
             // 
-            FromTextBox.Location = new Point(137, 96);
+            FromTextBox.Location = new Point(157, 120);
+            FromTextBox.Margin = new Padding(3, 4, 3, 4);
             FromTextBox.Name = "FromTextBox";
-            FromTextBox.Size = new Size(49, 23);
+            FromTextBox.Size = new Size(55, 27);
             FromTextBox.TabIndex = 2;
             FromTextBox.Text = "0:00";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(96, 100);
+            label2.Location = new Point(110, 125);
             label2.Name = "label2";
-            label2.Size = new Size(35, 16);
+            label2.Size = new Size(43, 20);
             label2.TabIndex = 2;
             label2.Text = "From";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(14, 129);
+            label3.Location = new Point(16, 161);
             label3.Name = "label3";
-            label3.Size = new Size(70, 16);
+            label3.Size = new Size(85, 20);
             label3.TabIndex = 4;
             label3.Text = "Short name";
             // 
             // ToTextBox
             // 
-            ToTextBox.Location = new Point(217, 96);
+            ToTextBox.Location = new Point(248, 120);
+            ToTextBox.Margin = new Padding(3, 4, 3, 4);
             ToTextBox.Name = "ToTextBox";
-            ToTextBox.Size = new Size(49, 23);
+            ToTextBox.Size = new Size(55, 27);
             ToTextBox.TabIndex = 3;
             ToTextBox.Text = "10:00";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(192, 99);
+            label4.Location = new Point(219, 124);
             label4.Name = "label4";
-            label4.Size = new Size(19, 16);
+            label4.Size = new Size(25, 20);
             label4.TabIndex = 7;
             label4.Text = "To";
             // 
             // LongNameTextBox
             // 
-            LongNameTextBox.Location = new Point(92, 158);
+            LongNameTextBox.Location = new Point(105, 198);
+            LongNameTextBox.Margin = new Padding(3, 4, 3, 4);
             LongNameTextBox.Name = "LongNameTextBox";
-            LongNameTextBox.Size = new Size(479, 23);
+            LongNameTextBox.Size = new Size(547, 27);
             LongNameTextBox.TabIndex = 5;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(14, 161);
+            label5.Location = new Point(16, 201);
             label5.Name = "label5";
-            label5.Size = new Size(68, 16);
+            label5.Size = new Size(83, 20);
             label5.TabIndex = 8;
             label5.Text = "Long name";
             // 
             // WatermarkTextBox
             // 
             WatermarkTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            WatermarkTextBox.Location = new Point(92, 187);
+            WatermarkTextBox.Location = new Point(105, 234);
+            WatermarkTextBox.Margin = new Padding(3, 4, 3, 4);
             WatermarkTextBox.Name = "WatermarkTextBox";
             WatermarkTextBox.PlaceholderText = "None";
-            WatermarkTextBox.Size = new Size(479, 23);
+            WatermarkTextBox.Size = new Size(547, 27);
             WatermarkTextBox.TabIndex = 6;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(14, 190);
+            label6.Location = new Point(16, 238);
             label6.Name = "label6";
-            label6.Size = new Size(66, 16);
+            label6.Size = new Size(81, 20);
             label6.TabIndex = 10;
             label6.Text = "Watermark";
             // 
@@ -160,103 +165,110 @@
             // 
             DateTextBox.AutoCompleteCustomSource.AddRange(new string[] { "Unknown" });
             DateTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            DateTextBox.Location = new Point(92, 216);
+            DateTextBox.Location = new Point(105, 270);
+            DateTextBox.Margin = new Padding(3, 4, 3, 4);
             DateTextBox.Name = "DateTextBox";
             DateTextBox.PlaceholderText = "yyyy-mm-dd or yyyy or yyyy-yyyy or  ~yyyy or Unknown";
-            DateTextBox.Size = new Size(479, 23);
+            DateTextBox.Size = new Size(547, 27);
             DateTextBox.TabIndex = 7;
             // 
             // LanguageTextBox
             // 
             LanguageTextBox.AutoSize = true;
-            LanguageTextBox.Location = new Point(14, 248);
+            LanguageTextBox.Location = new Point(16, 310);
             LanguageTextBox.Name = "LanguageTextBox";
-            LanguageTextBox.Size = new Size(60, 16);
+            LanguageTextBox.Size = new Size(74, 20);
             LanguageTextBox.TabIndex = 14;
             LanguageTextBox.Text = "Language";
             // 
             // OrgTextBox
             // 
             OrgTextBox.AutoSize = true;
-            OrgTextBox.Location = new Point(14, 277);
+            OrgTextBox.Location = new Point(16, 346);
             OrgTextBox.Name = "OrgTextBox";
-            OrgTextBox.Size = new Size(76, 16);
+            OrgTextBox.Size = new Size(95, 20);
             OrgTextBox.TabIndex = 16;
             OrgTextBox.Text = "Organization";
             // 
             // SourceTextTextBox
             // 
             SourceTextTextBox.AutoSize = true;
-            SourceTextTextBox.Location = new Point(14, 335);
+            SourceTextTextBox.Location = new Point(16, 419);
             SourceTextTextBox.Name = "SourceTextTextBox";
-            SourceTextTextBox.Size = new Size(70, 16);
+            SourceTextTextBox.Size = new Size(85, 20);
             SourceTextTextBox.TabIndex = 18;
             SourceTextTextBox.Text = "Source Text";
             // 
             // STextBox
             // 
-            STextBox.Location = new Point(92, 303);
+            STextBox.Location = new Point(105, 379);
+            STextBox.Margin = new Padding(3, 4, 3, 4);
             STextBox.Name = "STextBox";
             STextBox.PlaceholderText = "optional";
-            STextBox.Size = new Size(479, 23);
+            STextBox.Size = new Size(547, 27);
             STextBox.TabIndex = 10;
             // 
             // SourceTextBox
             // 
             SourceTextBox.AutoSize = true;
-            SourceTextBox.Location = new Point(14, 306);
+            SourceTextBox.Location = new Point(16, 382);
             SourceTextBox.Name = "SourceTextBox";
-            SourceTextBox.Size = new Size(45, 16);
+            SourceTextBox.Size = new Size(54, 20);
             SourceTextBox.TabIndex = 20;
             SourceTextBox.Text = "Source";
             // 
             // ShortNameTextBox
             // 
-            ShortNameTextBox.Location = new Point(92, 129);
+            ShortNameTextBox.Location = new Point(105, 161);
+            ShortNameTextBox.Margin = new Padding(3, 4, 3, 4);
             ShortNameTextBox.Name = "ShortNameTextBox";
-            ShortNameTextBox.Size = new Size(479, 23);
+            ShortNameTextBox.Size = new Size(547, 27);
             ShortNameTextBox.TabIndex = 4;
             // 
             // LangTextBox
             // 
             LangTextBox.AutoCompleteCustomSource.AddRange(new string[] { "de", "en", "rt", "it", "fr" });
             LangTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            LangTextBox.Location = new Point(92, 245);
+            LangTextBox.Location = new Point(105, 306);
+            LangTextBox.Margin = new Padding(3, 4, 3, 4);
             LangTextBox.Name = "LangTextBox";
             LangTextBox.PlaceholderText = "xx";
-            LangTextBox.Size = new Size(479, 23);
+            LangTextBox.Size = new Size(547, 27);
             LangTextBox.TabIndex = 8;
             // 
             // OrganizationTextBox
             // 
             OrganizationTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            OrganizationTextBox.Location = new Point(92, 274);
+            OrganizationTextBox.Location = new Point(105, 342);
+            OrganizationTextBox.Margin = new Padding(3, 4, 3, 4);
             OrganizationTextBox.Name = "OrganizationTextBox";
-            OrganizationTextBox.Size = new Size(479, 23);
+            OrganizationTextBox.Size = new Size(547, 27);
             OrganizationTextBox.TabIndex = 9;
             // 
             // STTextBox
             // 
-            STTextBox.Location = new Point(92, 332);
+            STTextBox.Location = new Point(105, 415);
+            STTextBox.Margin = new Padding(3, 4, 3, 4);
             STTextBox.Name = "STTextBox";
             STTextBox.PlaceholderText = "optional";
-            STTextBox.Size = new Size(479, 23);
+            STTextBox.Size = new Size(547, 27);
             STTextBox.TabIndex = 11;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(14, 219);
+            label7.Location = new Point(16, 274);
             label7.Name = "label7";
-            label7.Size = new Size(33, 16);
+            label7.Size = new Size(41, 20);
             label7.TabIndex = 26;
             label7.Text = "Date";
             // 
             // button1
             // 
-            button1.Location = new Point(14, 363);
+            button1.Location = new Point(16, 454);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(76, 23);
+            button1.Size = new Size(87, 42);
             button1.TabIndex = 12;
             button1.Text = "Create";
             button1.UseVisualStyleBackColor = true;
@@ -264,39 +276,42 @@
             // 
             // CmdTextBox
             // 
-            CmdTextBox.Location = new Point(14, 403);
+            CmdTextBox.Location = new Point(16, 504);
+            CmdTextBox.Margin = new Padding(3, 4, 3, 4);
             CmdTextBox.Name = "CmdTextBox";
             CmdTextBox.PlaceholderText = "Command";
             CmdTextBox.ReadOnly = true;
-            CmdTextBox.Size = new Size(776, 23);
+            CmdTextBox.Size = new Size(886, 27);
             CmdTextBox.TabIndex = 27;
             // 
             // CmdOutTextBox
             // 
-            CmdOutTextBox.Location = new Point(14, 432);
+            CmdOutTextBox.Location = new Point(16, 540);
+            CmdOutTextBox.Margin = new Padding(3, 4, 3, 4);
             CmdOutTextBox.Multiline = true;
             CmdOutTextBox.Name = "CmdOutTextBox";
             CmdOutTextBox.PlaceholderText = "Output";
             CmdOutTextBox.ReadOnly = true;
-            CmdOutTextBox.Size = new Size(776, 116);
+            CmdOutTextBox.Size = new Size(886, 144);
             CmdOutTextBox.TabIndex = 28;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI Variable Small", 19F);
-            label8.Location = new Point(12, 31);
+            label8.Location = new Point(14, 39);
             label8.Name = "label8";
-            label8.Size = new Size(388, 35);
+            label8.Size = new Size(481, 43);
             label8.TabIndex = 29;
             label8.Text = "Ident Archiver for Ident Archive";
             // 
             // statusStrip1
             // 
+            statusStrip1.ImageScalingSize = new Size(20, 20);
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
-            statusStrip1.Location = new Point(0, 566);
+            statusStrip1.Location = new Point(0, 709);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(800, 22);
+            statusStrip1.Size = new Size(914, 26);
             statusStrip1.SizingGrip = false;
             statusStrip1.TabIndex = 30;
             statusStrip1.Text = "statusStrip1";
@@ -304,14 +319,15 @@
             // toolStripStatusLabel1
             // 
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(40, 17);
+            toolStripStatusLabel1.Size = new Size(50, 20);
             toolStripStatusLabel1.Text = "Ready";
             // 
             // CleanButton
             // 
-            CleanButton.Location = new Point(96, 363);
+            CleanButton.Location = new Point(110, 454);
+            CleanButton.Margin = new Padding(3, 4, 3, 4);
             CleanButton.Name = "CleanButton";
-            CleanButton.Size = new Size(76, 23);
+            CleanButton.Size = new Size(87, 42);
             CleanButton.TabIndex = 31;
             CleanButton.Text = "Clear";
             CleanButton.UseVisualStyleBackColor = true;
@@ -321,20 +337,21 @@
             // 
             label9.AutoSize = true;
             label9.ForeColor = SystemColors.GrayText;
-            label9.Location = new Point(699, 551);
+            label9.Location = new Point(778, 689);
             label9.Name = "label9";
-            label9.Size = new Size(101, 16);
+            label9.Size = new Size(124, 20);
             label9.TabIndex = 32;
-            label9.Text = "Ident Archiver 1.0";
+            label9.Text = "Ident Archiver 1.1";
             // 
             // TrimCheckBox
             // 
             TrimCheckBox.AutoSize = true;
             TrimCheckBox.Checked = true;
             TrimCheckBox.CheckState = CheckState.Checked;
-            TrimCheckBox.Location = new Point(14, 99);
+            TrimCheckBox.Location = new Point(16, 124);
+            TrimCheckBox.Margin = new Padding(3, 4, 3, 4);
             TrimCheckBox.Name = "TrimCheckBox";
-            TrimCheckBox.Size = new Size(49, 20);
+            TrimCheckBox.Size = new Size(60, 24);
             TrimCheckBox.TabIndex = 33;
             TrimCheckBox.Text = "Trim";
             TrimCheckBox.UseVisualStyleBackColor = true;
@@ -342,9 +359,9 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 16F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 588);
+            ClientSize = new Size(914, 735);
             Controls.Add(TrimCheckBox);
             Controls.Add(CleanButton);
             Controls.Add(statusStrip1);
@@ -375,6 +392,7 @@
             Controls.Add(UrlTextBox);
             Controls.Add(label1);
             Controls.Add(label9);
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "Form1";
             Text = "Ident Archiver for Ident Archive";

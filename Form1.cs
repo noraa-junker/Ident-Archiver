@@ -65,8 +65,8 @@ namespace Ident_Archiver
                 ]));
             MainMenuStrip.Items.Add(new ToolStripMenuItem("Help", null,
                 [
-                    new ToolStripMenuItem("About", null, static (_, _) => MessageBox.Show("Created by Aaron Junker\n\nLicensed from Aaron Junker Technologies under the MIT license.", "About", MessageBoxButtons.OK, MessageBoxIcon.Information)),
-                    new ToolStripMenuItem("GitHub", null, static (_, _) => Process.Start(new ProcessStartInfo("https://github.com/aaron-junker/ident-archiver") { UseShellExecute = true })),
+                    new ToolStripMenuItem("About", null, static (_, _) => MessageBox.Show("Created by Noraa Junker\n\nLicensed by Aaron Junker Technologies by Noraa under the MIT license.", "About", MessageBoxButtons.OK, MessageBoxIcon.Information)),
+                    new ToolStripMenuItem("GitHub", null, static (_, _) => Process.Start(new ProcessStartInfo("https://github.com/noraa-junker/ident-archiver") { UseShellExecute = true })),
                 ]));
             MainMenuStrip.RenderMode = ToolStripRenderMode.System;
 
@@ -144,7 +144,14 @@ namespace Ident_Archiver
             ProcessStartInfo startInfo = new()
             {
                 FileName = Properties.Settings.Default.ytdlplocation,
-                Arguments = (TrimCheckBox.Checked ? "--download-sections \"*" + FromTextBox.Text + "-" + ToTextBox.Text + "\" " : "") + "-f mp4 -P \"" + Properties.Settings.Default.repolocation + "\\media\" -o \"" + currentFileName + ".mp4\" \"" + UrlTextBox.Text + "\"",
+                Arguments =
+    (TrimCheckBox.Checked
+        ? "--download-sections \"*" + FromTextBox.Text + "-" + ToTextBox.Text + "\" "
+        : "") +
+    "-f \"bv*+ba/b\" --merge-output-format mp4 --force-keyframes-at-cuts " +
+    "-P \"" + Properties.Settings.Default.repolocation + "\\media\" " +
+    "-o \"" + currentFileName + ".%(ext)s\" " +
+    "\"" + UrlTextBox.Text + "\"",
                 RedirectStandardError = true,
                 RedirectStandardOutput = true,
                 CreateNoWindow = true

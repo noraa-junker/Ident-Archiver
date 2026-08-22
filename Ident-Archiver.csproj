@@ -2,12 +2,13 @@
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
 		<AssemblyVersion>1.1</AssemblyVersion>
-		<TargetFramework>net8.0-windows</TargetFramework>
+		<TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+		<TargetFramework>net11.0</TargetFramework>
 		<RootNamespace>Ident_Archiver</RootNamespace>
 		<Nullable>enable</Nullable>
-		<Copyright>Aaron Junker Technologies under MIT License</Copyright>
-		<Company>Aaron Juner Technologies</Company>
-		<Authors>Aaron Junker Technologies</Authors>
+		<Copyright>Aaron Junker Technologies by Noraa under MIT License</Copyright>
+		<Company>Aaron Juner Technologies by Noraa</Company>
+		<Authors>Aaron Junker Technologies by Noraa</Authors>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Description>Ident Archiver for Ident Archive</Description>
